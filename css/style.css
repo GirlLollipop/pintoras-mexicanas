@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    src: url(../assets/fonts/typwrng.ttf);
+}
+
+/*Este es un comment*/
+body{
+    margin: 0;
+    padding:0 ;
+    font-family: sans-serif;
+}
+
+/*ID*/
+#icon-nav{
+  width: 20px; 
+  padding: 10px; 
+}
+
+nav span{
+    color: #ffffff;
+    font-size:18px;
+    font-weight: bolder;
+}
+
+nav{
+    background-color: pink;
+    position:fixed;
+    width: 100%;  
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+nav a:hover{
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+
+#banner{
+    width: 100%;
+}
+
+.cards{
+    width: 100%;
+}
+
+.picture{
+    width: 45%;
+    display: inline-block;
+}
+
+.picture img{
+    width: 100%;
+}
+
+.bio{
+    width: 50%;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.title{
+    font-weight: bolder;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+footer{
+    background-color: mediumvioletred;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer p{
+    margin: 0;
+    font-weight: bolder;
+    font-size: 12px
+}
+
+#remedios-varo{
+    background-color:pink;
+}
+
+#gallery{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#gallery div{
+    display: inline-block;
+}
+
+#gallery img{
+    width: 200px;
+    height:300px;
+    padding: 10px;
+}
+
+#gallery img:hover{
+    filter: opacity(.5);
+}
+
+
+/*PSEUDOCLASES*/
+div.bio p:first-of-type{
+    font-weight: bolder;
+    color: crimson;
+}
+
+div.bio p:nth-of-type(3n){
+    font-style: italic;
+    font-size: smaller;
+    color: darkblue;
+}
+
+div.bio:read-only{
+    cursor: not-allowed;
+}
+
+@media (max-width:950px){
+
+.bio, .picture {
+    width: 100%;
+}
+
+section{
+    width: 90%;
+    height: auto;
+}
+
+}
+
+@media (min-width:1020px){
+    body {
+        background-color: darkgoldenrod;
+    }
+}
+
+@media (min-width:990px) and (orientation:landscape){
+    body{
+        background-color: darkred;
+    }
+}
+
+
